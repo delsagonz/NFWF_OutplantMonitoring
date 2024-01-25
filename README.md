@@ -6,14 +6,14 @@
 
 Required libraries: **tidyverse,diplyr,readxl & ggplot2**
 
-***Outputs: 
-     TOTAL_FINAL_AREA
-             TOTAL_INITIAL_AREA
-        LIVE_PLANAR_AREA_CM2 
-        PERCENT_LIVE_TISSUE
-                 MEAN/SE/SD
-                   CHANGE/GROWTH_CM2
-                 GROWTHRATE_PERCENT(%)**
+                         ***Outputs: 
+                                             TOTAL_FINAL_AREA
+                                                                                        TOTAL_INITIAL_AREA
+                            LIVE_PLANAR_AREA_CM2 
+                                                PERCENT_LIVE_TISSUE
+                                          MEAN/SE/SD
+                                  CHANGE/GROWTH_CM2
+                                GROWTHRATE_PERCENT(%)**
 
 There are 2 different codes listed in this source: MaxGrowthPotential_ & Array_Growths
 
