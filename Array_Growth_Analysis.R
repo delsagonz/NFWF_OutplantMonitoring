@@ -1,4 +1,4 @@
-#APAL Outplant Array Analysis ~ NFWF Parameters 
+#APAL Outplant Array Analysis ~ NFWF Parameters - In this script dead fragments are not considered when running the analyse.
 
 #To whoever uses this - I tried to write notes, but ask away! 
 #Feel free to change all df (dataframe) to whatever works best :) ~ Delsa 
@@ -117,42 +117,3 @@ ggplot(final_combined_data, aes(x = Array, y = live_planar_area_per_cm2)) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
-
-
-
-
-#_____________________________-----------work IP zone - need to figure out how to add in DEAD FRAGMENTS TO SUBTRACT IT FROM INTIAL AREA-------------- _______________________________# 
-
-#See Github for details of models
-# Fit a linear regression model to estimate growth potential
-model <- lm(growth ~ total_initial_area, data = final_combined_data)
-# Summary of the model
-summary(model)
-
-# Extract the estimated coefficients
-coefficients <- coef(model)
-# The coefficient for 'initial_area' represents the estimated growth potential
-max_growth_potential <- coefficients["total_initial_area"]
-# Print the estimated maximum growth potential
-print(max_growth_potential)
-
-
-# Calculate final area after two years with 30% initial mortality and fixed growth potential
-percentmort_30 <- final_combined_data$total_initial_area * 0.7 * max_growth_potential * 2
-# Display the result
-print(percentmort_30)
-# Calculate final area after two years with 10% initial mortality and fixed growth potential
-percentmort_10 <- final_combined_data$total_initial_area * 0.9 * max_growth_potential * 2
-# Display the result
-print(percentmort_10)
-
-#_____________________________-----------work IP zone -------------- _______________________________# 
-
-# Calculate growth potential for each array
-final_combined_data$growth_potential_per_cm2 <- final_combined_data$growth / final_combined_data$total_initial_area
-
-# Find the maximum growth potential
-max_growth_potential_per_cm2 <- max(final_combined_data$growth_potential_per_cm2)
-
-# Print or use the maximum growth potential as needed
-print(max_growth_potential_per_cm2)
