@@ -119,3 +119,10 @@ ggplot(final_combined_data, aes(x = Array, y = live_planar_area_per_cm2)) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
+#Estimate of Total Increase in Living Tissue
+#Extract the values from the data frame and input it here or manually! 
+
+#mean total_initial_area * mean live_planar_area_per_cm2 increase * live_planar_area_per_cm2
+
+
+
