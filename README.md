@@ -1,5 +1,6 @@
 # NFWF_OutplantMonitoring
-:BOWTIE
+:ocean:
+
 
 *This will use TagLab's export file to report on outplanted APAL array monitoring data. Looking at longterm monitoirng of **APAL** arrays and the use of top-down photos allows post-outplant analysis via TagLab where areas will be outputed. There should be an intial and final area in order to this script to work succesfully.* 
 
