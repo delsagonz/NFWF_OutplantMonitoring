@@ -79,6 +79,8 @@ final_combined_data$percentage_live_tissue <- (final_combined_data$total_result.
 
 #Finding mean , SD , SE - this will give you mean change, max, min, median, SE, SD, 1st / 3rd Quartile 
 summary_stats <- summary(final_combined_data)
+view(summary_stats) #extened stats breakdown
+view(summary) #abridged with column mean,sd,se
 
 # Identify numeric columns
 numeric_cols <- sapply(final_combined_data, is.numeric)
