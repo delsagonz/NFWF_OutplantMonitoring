@@ -77,7 +77,7 @@ final_combined_data$live_planar_area_per_cm2 <- final_combined_data$growth / fin
 #Percentage of Live Tissue (Initial Live Tissue Area/Final Live Tissue Area) X 100
 final_combined_data$percentage_live_tissue <- (final_combined_data$total_result.y / final_combined_data$total_initial_area) * 100
 
-#Finding mean , SD , SE 
+#Finding mean , SD , SE - this will give you mean change, max, min, median, SE, SD, 1st / 3rd Quartile 
 summary_stats <- summary(final_combined_data)
 
 # Identify numeric columns
