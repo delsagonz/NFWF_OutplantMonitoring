@@ -6,20 +6,20 @@
 
 Required libraries: **tidyverse,diplyr,readxl & ggplot2**
 
-Outputs: 
- TOTAL_FINAL_AREA
- TOTAL_INITIAL_AREA
- LIVE_PLANAR_AREA_CM2 
- PERCENT_LIVE_TISSUE
- MEAN/SE/SD
- CHANGE/GROWTH_CM2
- GROWTHRATE_PERCENT(%)
+***Outputs: 
+     TOTAL_FINAL_AREA
+             TOTAL_INITIAL_AREA
+        LIVE_PLANAR_AREA_CM2 
+        PERCENT_LIVE_TISSUE
+                 MEAN/SE/SD
+                   CHANGE/GROWTH_CM2
+                 GROWTHRATE_PERCENT(%)**
 
 There are 2 different codes listed in this source: MaxGrowthPotential_ & Array_Growths
 
 **MaxGrowthPotential** - has a different function as it accounts for mortality and determine a more accurate growth rate of the surviving fragments, maximum growth potential was calculated by removing dead and missing fragments from the growth analyses.
                                                                          
-                                                                         **TotalGrowth** - does not do use the subtracted dead fragments, therefore there will be a difference in growth results between both scripts.
+**TotalGrowth** - does not do use the subtracted dead fragments, therefore there will be a difference in growth results between both scripts.
 
 Choose the one that works best for your purposes. Godspeed :vulcan_salute::mermaid:
 
