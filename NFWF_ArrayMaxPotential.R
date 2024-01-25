@@ -71,8 +71,10 @@ calculate_growth_rate <- function(total_initial_area, total_result) {
 # Calculate growth rate using initial and final area columns (%)
 final_combined_data$growth_rate <- calculate_growth_rate(final_combined_data$total_initial_area,final_combined_data$total_result)
 
-#Finding mean , SD , SE 
+#Finding mean , SD , SE - this will give you mean change, max, min, median, SE, SD, 1st / 3rd Quartile 
 summary_stats <- summary(final_combined_data)
+view(summary_stats) #extened stats breakdown
+view(summary) #abridged with column mean,sd,se
 
 # Identify numeric columns
 numeric_cols <- sapply(final_combined_data, is.numeric)
