@@ -13,7 +13,7 @@ Required libraries: **tidyverse,diplyr,readxl & ggplot2**
                                 PERCENT_LIVE_TISSUE
                                   MEAN/SE/SD
                                 CHANGE/GROWTH_CM2
-                              GROWTHRATE_PERCENT(%)**
+                               GROWTHRATE_PERCENT(%) 
 
 There are 2 different codes listed in this source: MaxGrowthPotential_ & Array_Growths
 
