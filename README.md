@@ -18,7 +18,7 @@ Required libraries: **tidyverse,diplyr,readxl & ggplot2**
                               MAX_GROWTHPOTENTIAL_CM2
                         
 
-There are 2 different codes listed in this source: MaxGrowthPotential_ & Array_Growths. The codes may look different but they are not - there is a step where grouping is different..
+There are 2 different codes listed in this source: MaxGrowthPotential_ & Array_Growths. The codes may look similar but they are not - there is a step where grouping is different..
 
 **MaxGrowthPotential** - has a different function as it accounts for mortality and determine a more accurate growth rate of the surviving fragments, maximum growth potential was calculated by removing dead and missing fragments from the growth analyses.
                                                                          
